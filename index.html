@@ -1,33 +1,224 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sistema e pastel frito na hora">
+    <meta name="description" content="Do Gordo Software & Food House — Sistema e Pastel Frito na Hora. Desenvolvimento de software e pastelaria artesanal em Araçatuba, SP.">
     <link rel="icon" type="image/x-icon" href="images/gordo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Do Gordo Software & Food House</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0px;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
 </head>
 <body>
+
+<!-- Navbar -->
+<nav class="navbar">
     <div class="container">
-        <img src="images/marca.gif">
-        <img src="images/gordo.jpg">
+        <a href="index.html" class="navbar-logo">
+            <img src="images/logo_small.png" alt="Do Gordo">
+        </a>
+        <button class="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="navbar-links">
+            <a href="#inicio">Início</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#metodologia">Metodologia</a>
+            <a href="about.html">Equipe</a>
+            <a href="#contato">Contato</a>
+        </div>
     </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="inicio">
+    <div class="hero-content fade-in">
+        <img src="images/gordo.jpg" alt="Mascote Do Gordo" class="hero-mascot">
+        <img src="images/logo.png" alt="Do Gordo" class="hero-logo">
+        <h1>Sistema e Pastel Frito na Hora</h1>
+        <p class="subtitle">Engenharia de software artesanal com o mesmo carinho de um pastel feito na hora. Desde 2004, unindo tecnologia e gastronomia em Araçatuba, SP.</p>
+        <div class="hero-buttons">
+            <a href="#servicos" class="btn btn-primary">Nossos Serviços</a>
+            <a href="about.html" class="btn btn-secondary">Conheça a Equipe</a>
+        </div>
+    </div>
+</section>
+
+<!-- Serviços -->
+<section id="servicos" class="section-alt">
+    <div class="container">
+        <h2 class="section-title fade-in">Nossos Serviços</h2>
+        <p class="section-subtitle fade-in">Soluções completas em tecnologia e pastelaria. Cada projeto é tratado com o mesmo cuidado de um pastel bem recheado.</p>
+        <div class="cards-grid">
+            <div class="card fade-in">
+                <div class="card-icon">💻🥟</div>
+                <h3>Desenvolvimento sob Encomenda</h3>
+                <p>Software customizado como recheio de pastel: você escolhe o que quer dentro e a gente fecha, frita e entrega quentinho.</p>
+            </div>
+            <div class="card fade-in">
+                <div class="card-icon">🤝🍽️</div>
+                <h3>Consultoria em TI & Gastronomia</h3>
+                <p>Microsserviço ou mini-pastel? A gente te ajuda a decidir a arquitetura ideal — tanto do sistema quanto do cardápio.</p>
+            </div>
+            <div class="card fade-in">
+                <div class="card-icon">📞🕐</div>
+                <h3>Suporte 24/7 (horário comercial)</h3>
+                <p>Disponibilidade total, de segunda a sexta, das 9h às 18h. Nos finais de semana, deixe recado que a gente finge que viu.</p>
+            </div>
+            <div class="card fade-in">
+                <div class="card-icon">🔗🫕</div>
+                <h3>Integração de Sistemas e Sabores</h3>
+                <p>Conectamos seu ERP à API da fritadeira industrial. Dados e óleo quente fluindo em harmonia.</p>
+            </div>
+            <div class="card fade-in">
+                <div class="card-icon">☁️🧃</div>
+                <h3>Cloud & Caldo de Cana</h3>
+                <p>Migração pra nuvem com um caldo de cana gelado na mão. Seus dados sobem, sua sede desce.</p>
+            </div>
+            <div class="card fade-in">
+                <div class="card-icon">🚀🛵</div>
+                <h3>DevOps & Delivery</h3>
+                <p>Pipeline de CI/CD mais rápido que o motoboy. Deploy contínuo com entrega em até 30 minutos ou o próximo bug é por nossa conta.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Metodologia XGH -->
+<section id="metodologia">
+    <div class="container">
+        <h2 class="section-title fade-in">Metodologia: eXtreme Go Horse (XGH)</h2>
+        <p class="section-subtitle fade-in">Orgulhosamente adotamos o XGH como metodologia oficial. Move fast, break things, frita tudo.</p>
+        <div class="methodology-list">
+            <div class="methodology-item fade-in">
+                <h3>1. Pensou, não é XGH</h3>
+                <p>Nem pensa no recheio, já joga na massa e frita. Se parar pra pensar, o pastel esfria e o deploy atrasa.</p>
+            </div>
+            <div class="methodology-item fade-in">
+                <h3>2. Três formas de resolver um problema</h3>
+                <p>O jeito certo, o errado, e o XGH — que é igual o errado, mas o pastel sai mais rápido e o cliente nem percebe.</p>
+            </div>
+            <div class="methodology-item fade-in">
+                <h3>3. Testes são para os fracos</h3>
+                <p>Se compilou e se fritou, tá pronto. Provar o pastel antes de servir é opcional. O cliente testa em produção.</p>
+            </div>
+            <div class="methodology-item fade-in">
+                <h3>4. Código funcionando: não altere</h3>
+                <p>Pastel que tá vendendo não muda a receita. Se o sistema roda e o pastel vende, mexer nisso é heresia.</p>
+            </div>
+            <div class="methodology-item fade-in">
+                <h3>5. XGH é totalmente reativo</h3>
+                <p>Pastel só queima quando alguém percebe. Bug só é bug quando o cliente reclama. Até lá, é feature.</p>
+            </div>
+            <div class="methodology-item fade-in">
+                <h3>6. Não existe refatoração em XGH</h3>
+                <p>Pastel que saiu torto não volta pra massa. Vira promoção do dia e segue o jogo.</p>
+            </div>
+        </div>
+        <div class="methodology-link fade-in">
+            <p>Quer conhecer todos os axiomas? Acesse o manifesto completo:</p>
+            <a href="https://gohorse.com.br/extreme-go-horse-xgh.html" target="_blank" rel="noopener">gohorse.com.br/extreme-go-horse-xgh.html</a>
+        </div>
+    </div>
+</section>
+
+<!-- Números -->
+<section class="stats" id="numeros">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="fade-in">
+                <div class="stat-number" data-target="6">0</div>
+                <div class="stat-label">Fundadores</div>
+            </div>
+            <div class="fade-in">
+                <div class="stat-number" data-target="1000" data-prefix="+">0</div>
+                <div class="stat-label">Pastéis Fritos</div>
+            </div>
+            <div class="fade-in">
+                <div class="stat-number" data-target="99.9" data-suffix="%" data-decimal="true">0</div>
+                <div class="stat-label">Uptime da Fritadeira</div>
+            </div>
+            <div class="fade-in">
+                <div class="stat-number" data-target="0">0</div>
+                <div class="stat-label">Reclamações no Reclame Aqui</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Depoimentos -->
+<section id="depoimentos" class="section-alt">
+    <div class="container">
+        <h2 class="section-title fade-in">O Que Dizem Nossos Clientes</h2>
+        <p class="section-subtitle fade-in">Depoimentos 100% reais de clientes que definitivamente existem.</p>
+        <div class="testimonials-grid">
+            <div class="testimonial fade-in">
+                <p>Pedi um sistema de gestão e ganhei um pastel de carne de brinde. O sistema ainda não funciona direito, mas o pastel estava impecável. 5 estrelas.</p>
+                <div class="testimonial-author">— Dona Marlene, Mercadinho da Esquina</div>
+            </div>
+            <div class="testimonial fade-in">
+                <p>Contratei a consultoria deles pra migrar pra nuvem. Ainda não sei se estou na nuvem, mas o caldo de cana que trouxeram na reunião era o melhor que já tomei.</p>
+                <div class="testimonial-author">— Carlos Eduardo, CTO da PadariaTech</div>
+            </div>
+            <div class="testimonial fade-in">
+                <p>O deploy saiu mais rápido que o delivery do iFood. Deu uns bugs, mas eles disseram que é feature. Confiança total no processo XGH.</p>
+                <div class="testimonial-author">— João Pedro, Startup de Agro</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contato -->
+<section id="contato">
+    <div class="container">
+        <h2 class="section-title fade-in">Faça Seu Pedido</h2>
+        <p class="section-subtitle fade-in">Seja um sistema complexo ou um pastel simples, estamos prontos pra atender.</p>
+        <div class="contact-content fade-in">
+            <div class="contact-details">
+                <div class="contact-item">
+                    <h4>Pagamento</h4>
+                    <p>Cartão, Pix ou Pull Request</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Localização</h4>
+                    <p>Araçatuba, SP<br>Onde o interior encontra a inovação</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Horário</h4>
+                    <p>Seg-Sex: 9h às 18h<br>Sábado: só se o deploy quebrar<br>Domingo: nem pensar</p>
+                </div>
+            </div>
+            <a href="https://www.linkedin.com/company/dogordo/" target="_blank" rel="noopener" class="btn btn-primary">Fale Conosco no LinkedIn</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="images/logo_small.png" alt="Do Gordo" style="height:36px;">
+                <p>Feito com massa, código e muito óleo.</p>
+            </div>
+            <div class="footer-nav">
+                <a href="#inicio">Início</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#metodologia">Metodologia</a>
+                <a href="about.html">Equipe</a>
+                <a href="#contato">Contato</a>
+                <a href="https://www.linkedin.com/company/dogordo/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Do Gordo Software & Food House. Todos os direitos reservados (menos o de reclamar do pastel).</span>
+            <span>CNPJ: aguardando (o contador também segue XGH)</span>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
