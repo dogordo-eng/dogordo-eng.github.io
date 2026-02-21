@@ -6,5 +6,6 @@ set -euo pipefail
 # Only run if CSS or JS files are being committed
 if git diff --cached --name-only | grep -qE '(css/style\.css|js/main\.js)$'; then
   ./cache-bust.sh
-  git diff --name-only | grep -E '\.html$' | xargs -r git add
+  # Stage only HTML files that actually changed
+  git diff --name-only -- '*.html' | xargs git add 2>/dev/null || true
 fi
