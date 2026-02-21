@@ -404,6 +404,50 @@ section { padding: 5rem 0; }
   box-shadow: none;
 }
 
+/* --- Blog --- */
+.blog-post {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 3rem;
+  box-shadow: var(--shadow);
+}
+
+.blog-post-title {
+  font-size: 2rem;
+  color: var(--dark);
+  margin-bottom: .5rem;
+  text-align: left;
+}
+
+.blog-post-meta {
+  font-size: .85rem;
+  color: var(--dark-light);
+  opacity: .7;
+  margin-bottom: 2rem;
+}
+
+.blog-post h3 {
+  font-size: 1.4rem;
+  color: var(--red);
+  margin: 2rem 0 .5rem;
+}
+
+.blog-post p {
+  color: var(--dark-light);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.blog-post code {
+  background: var(--cream);
+  padding: .15rem .4rem;
+  border-radius: 4px;
+  font-size: .9rem;
+}
+
 /* --- Lightbox --- */
 .lightbox {
   display: none;
