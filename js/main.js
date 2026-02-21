@@ -83,3 +83,28 @@ function animateCounters() {
 }
 
 animateCounters();
+
+// Lightbox for store images
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+if (lightbox) {
+  document.querySelectorAll('[data-lightbox]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      lightboxImg.src = link.href;
+      lightboxImg.alt = link.querySelector('img').alt;
+      lightbox.classList.add('active');
+    });
+  });
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target !== lightboxImg) {
+      lightbox.classList.remove('active');
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') lightbox.classList.remove('active');
+  });
+}
