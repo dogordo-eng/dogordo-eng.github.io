@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Pre-commit hook: run cache-bust.sh and stage updated HTML files
+
+set -euo pipefail
+
+# Only run if CSS or JS files are being committed
+if git diff --cached --name-only | grep -qE '(css/style\.css|js/main\.js)$'; then
+  ./cache-bust.sh
+  git diff --name-only | grep -E '\.html$' | xargs -r git add
+fi
