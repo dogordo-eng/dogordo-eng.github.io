@@ -669,6 +669,36 @@ section { padding: 5rem 0; }
 .contact-item { text-align: center; min-width: 180px; }
 .contact-item h4 { color: var(--gold); font-size: 1.2rem; margin-bottom: .3rem; }
 
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: .5rem;
+  column-gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.contact-links h4 {
+  width: 100%;
+  color: var(--gold);
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  color: var(--dark);
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+.contact-link:hover { color: var(--gold); }
+.contact-link img { width: 18px; height: 18px; opacity: .7; }
+.contact-link img[alt="LinkedIn"] { width: 14px; height: 14px; }
+
 /* --- Team Cards --- */
 .team-intro {
   text-align: center;
