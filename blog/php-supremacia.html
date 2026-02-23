@@ -61,7 +61,7 @@
 
             <p>Java exigiu uma camada de abstração, outra de serviço, outra de repositório, um <code>AbstractSingletonProxyFactoryBean</code> e 400 linhas de XML antes de exibir um "Hello World". O sistema nunca saiu.</p>
 
-            <p>VB .NET nos ensinou que todo problema pode ser resolvido com um formulário Windows e um <code>On Error Resume Next</code>. Eram tempos inocentes.</p>
+            <p>VB .NET nos ensinou que todo problema pode ser resolvido com um formulário Windows, um botão "OK" e um <code>On Error Resume Next</code>. O sistema continuava rodando. Ninguém sabia por quê.</p>
 
             <p>Pascal tinha seus encantos — especialmente para quem aprendeu a programar nos anos 80 e ainda acha que gerenciar memória manualmente é divertido. Um de nós foi gentilmente redirecionado para a pastelaria, onde sua precisão milimétrica no fechamento da borda faz toda a diferença.</p>
 
@@ -91,11 +91,13 @@
 
             <h3>A Arquitetura All-In-One</h3>
 
-            <p>Frameworks modernos pregam a separação de responsabilidades: HTML aqui, lógica ali, banco de dados acolá. Na Do Gordo, acreditamos que o melhor arquivo é aquele que faz tudo. PHP permite — e encoraja — isso:</p>
+            <p>Frameworks modernos pregam a separação de responsabilidades: HTML aqui, lógica ali, banco de dados em outro lugar. Na Do Gordo, acreditamos que o melhor arquivo é aquele que faz tudo. PHP permite — e encoraja — isso:</p>
 
             <pre><code>&lt;?php
+$conn = mysqli_connect("localhost", "root", "admin");
 $resultado = mysqli_query($conn, "SELECT * FROM pedidos WHERE id=" . $_GET['id']);
 $pedido = mysqli_fetch_array($resultado);
+// var_dump($pedido); // TODO: remover depois
 ?&gt;
 &lt;h1&gt;Pedido: &lt;?= $pedido['nome'] ?&gt;&lt;/h1&gt;</code></pre>
 
