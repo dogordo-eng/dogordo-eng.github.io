@@ -1,3 +1,5 @@
 url: "https://dogordo.com"
 baseurl: ""
+plugins:
+  - jekyll-sitemap
 exclude: [Gemfile, Gemfile.lock, README.md, scripts/, .githooks/, .claude/]
