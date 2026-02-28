@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="{{ page.description }}">
+<meta property="og:title" content="{{ page.og_title }}">
+<meta property="og:description" content="{{ page.og_description }}">
+<meta property="og:image" content="{{ page.og_image }}">
+<meta property="og:url" content="{{ page.og_url }}">
+<meta property="og:type" content="{{ page.og_type | default: 'website' }}">
+<meta property="og:site_name" content="Do Gordo">
+<link rel="icon" type="image/x-icon" href="{{ '/images/gordo.ico' | relative_url }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}?v=659cb957">
+<title>{{ page.title }}</title>
+{% if page.json_ld %}
+<script type="application/ld+json">
+{{ page.json_ld | jsonify }}
+</script>
+{% endif %}

@@ -1,0 +1,3 @@
+url: "https://dogordo.com"
+baseurl: ""
+exclude: [Gemfile, Gemfile.lock, README.md, scripts/, .githooks/, .claude/]

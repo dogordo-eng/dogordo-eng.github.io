@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# Pre-commit hook: run cache-bust.sh and stage updated HTML files
+# Pre-commit hook: run cache-bust.sh and stage updated include files
 
 set -euo pipefail
 
 # Only run if CSS or JS files are being committed
 if git diff --cached --name-only | grep -qE '(css/style\.css|js/main\.js)$'; then
   ./scripts/cache-bust.sh
-  # Stage only HTML files that actually changed
-  git diff --name-only -- '*.html' | xargs git add 2>/dev/null || true
+  # Stage only include files that actually changed
+  git diff --name-only -- '_includes/*.html' | xargs git add 2>/dev/null || true
 fi
